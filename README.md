@@ -1,12 +1,6 @@
 # 🖊️ NovelForge
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/icywhiteqq/novelforge?style=flat&color=ff6b6b" alt="stars">
-  <img src="https://img.shields.io/github/license/icywhiteqq/novelforge" alt="license">
-  <img src="https://img.shields.io/python-version/novelforge?logo=python" alt="python">
-</p>
-
-> AI-Powered Long-Form Novel Writing with Autonomous Characters
+AI-Powered Long-Form Novel Writing with Autonomous Characters
 
 NovelForge is an innovative framework for writing long novels with AI agents. Each character is an autonomous agent with their own soul, memory, and goals. The system solves the core problems of AI novel writing:
 
