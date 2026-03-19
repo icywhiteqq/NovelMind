@@ -7,7 +7,7 @@ class Config:
     """LLM 配置 - 在这里修改你的API Key"""
     
     # ===== 在这里填入你的 API Key =====
-    LLM_API_KEY = "sk-QYzK5ftS5P5GktkgfY98Zg"  # 替换成你的key
+    LLM_API_KEY = "sk-YOUR-KEY-HERE"  # 替换成你的key
     LLM_BASE_URL = "https://models.sjtu.edu.cn/api/v1"  # API地址
     LLM_MODEL = "minimax-m2.5"
     LLM_TEMPERATURE = 0.8
