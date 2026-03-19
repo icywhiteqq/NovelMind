@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv
+
+# 环境变量（保护API Key）
+.env
+.env.local
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 小说进度文件
+*_save.json
+*_进度.json
+
+# 日志
+*.log
+
+# Node (如果有)
+node_modules/

@@ -1,0 +1,201 @@
+{
+  "project": "星际觉醒",
+  "updated_at": "2026-03-19T02:49:25.286920",
+  "memories": [
+    {
+      "id": "8272f21c-b2e3-4302-9d09-91a05cde3dde",
+      "type": "plot",
+      "content": "第1章: 第一章：启航 - 待补充",
+      "chapter": 1,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:40:53.240288",
+      "tags": [
+        "章节",
+        "1"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "bfcced32-a10a-41ce-bcde-78f176bc5d69",
+      "type": "plot",
+      "content": "第2章: 第二章：信号 - 待补充",
+      "chapter": 2,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:40:53.240295",
+      "tags": [
+        "章节",
+        "2"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "c5b7aa4c-bcf4-49e0-8f15-c2492910e2fa",
+      "type": "plot",
+      "content": "第3章: 第三章：偏离 - 待补充",
+      "chapter": 3,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:40:53.240299",
+      "tags": [
+        "章节",
+        "3"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "8b38874a-ad10-4197-ac6f-da8a79e786c5",
+      "type": "plot",
+      "content": "第4章: 第四章：遗迹 - 待补充",
+      "chapter": 4,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:40:53.240302",
+      "tags": [
+        "章节",
+        "4"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "24bb96e8-2c69-4e2c-a428-52197517507a",
+      "type": "plot",
+      "content": "第5章: 第五章：危机 - 待补充",
+      "chapter": 5,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:40:53.240304",
+      "tags": [
+        "章节",
+        "5"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "3961f9ee-7b88-4813-8697-4c41dac50ad1",
+      "type": "plot",
+      "content": "第1章: 第一章：启航 - 待补充",
+      "chapter": 1,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:40:53.240307",
+      "tags": [
+        "章节",
+        "1"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "b36581aa-6a9b-4985-8637-9ca65550d84b",
+      "type": "plot",
+      "content": "第2章: 第二章：信号 - 待补充",
+      "chapter": 2,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:40:53.240309",
+      "tags": [
+        "章节",
+        "2"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "79279aba-0e87-4b4e-88e2-cf886584801d",
+      "type": "plot",
+      "content": "第3章: 第三章：偏离 - 待补充",
+      "chapter": 3,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:40:53.240312",
+      "tags": [
+        "章节",
+        "3"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "2320b017-6d6f-492e-8fca-9205068ee90c",
+      "type": "plot",
+      "content": "第4章: 第四章：遗迹 - 待补充",
+      "chapter": 4,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:40:53.240314",
+      "tags": [
+        "章节",
+        "4"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "002bec81-86de-43c8-9e4c-d23ad8d00402",
+      "type": "plot",
+      "content": "第5章: 第五章：危机 - 待补充",
+      "chapter": 5,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:40:53.240317",
+      "tags": [
+        "章节",
+        "5"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "bb028e1e-3c4f-4cd5-8300-85eaedd2844b",
+      "type": "plot",
+      "content": "第1章: 第一章：启航 - 待补充",
+      "chapter": 1,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:42:53.415365",
+      "tags": [
+        "章节",
+        "1"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "bfc95b30-4253-44aa-b592-cae93e61c407",
+      "type": "plot",
+      "content": "第2章: 第二章：信号 - 待补充",
+      "chapter": 2,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:44:53.518954",
+      "tags": [
+        "章节",
+        "2"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "7cca77d3-6716-4373-ba3a-ca498dc42165",
+      "type": "plot",
+      "content": "第3章: 第三章：偏离 - 待补充",
+      "chapter": 3,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:46:53.633219",
+      "tags": [
+        "章节",
+        "3"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "e988f80a-2d07-4b07-96a9-e66bb8acdfa4",
+      "type": "plot",
+      "content": "第4章: 第四章：遗迹 - 待补充",
+      "chapter": 4,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:47:25.232366",
+      "tags": [
+        "章节",
+        "4"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "5dde7a73-5fa4-4ec7-b052-075629baa290",
+      "type": "plot",
+      "content": "第5章: 第五章：危机 - 待补充",
+      "chapter": 5,
+      "importance": 5.0,
+      "created_at": "2026-03-19T02:49:25.286903",
+      "tags": [
+        "章节",
+        "5"
+      ],
+      "metadata": {}
+    }
+  ]
+}

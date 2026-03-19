@@ -1,0 +1,81 @@
+{
+  "threads": [
+    {
+      "id": "fa5943cc-4ab1-41ba-a944-1e8f145a4059",
+      "title": "陈锋的过去",
+      "content": "陈锋的过去",
+      "plot_type": "foreshadow",
+      "status": "ready",
+      "created_chapter": 1,
+      "target_reveal_chapter": null,
+      "revealed_chapter": null,
+      "related_characters": [
+        "陈锋",
+        "雅典娜",
+        "林小满",
+        "影子"
+      ],
+      "related_locations": [],
+      "clues": [],
+      "importance": 7.0
+    },
+    {
+      "id": "17826a6a-8d35-4e72-b68f-73ab94b66c0a",
+      "title": "雅典娜的觉醒",
+      "content": "雅典娜的觉醒",
+      "plot_type": "foreshadow",
+      "status": "ready",
+      "created_chapter": 1,
+      "target_reveal_chapter": null,
+      "revealed_chapter": null,
+      "related_characters": [
+        "陈锋",
+        "雅典娜",
+        "林小满",
+        "影子"
+      ],
+      "related_locations": [],
+      "clues": [],
+      "importance": 7.0
+    },
+    {
+      "id": "12df5e2c-a8dc-4a91-b780-5c8048cb01dd",
+      "title": "遗迹中的惊人秘密",
+      "content": "遗迹中的惊人秘密",
+      "plot_type": "foreshadow",
+      "status": "active",
+      "created_chapter": 4,
+      "target_reveal_chapter": null,
+      "revealed_chapter": null,
+      "related_characters": [
+        "陈锋",
+        "雅典娜",
+        "林小满",
+        "影子"
+      ],
+      "related_locations": [],
+      "clues": [],
+      "importance": 7.0
+    },
+    {
+      "id": "a1d0f505-78d6-4a06-972c-222da138eb4f",
+      "title": "雅典娜的未来",
+      "content": "雅典娜的未来",
+      "plot_type": "foreshadow",
+      "status": "active",
+      "created_chapter": 10,
+      "target_reveal_chapter": null,
+      "revealed_chapter": null,
+      "related_characters": [
+        "陈锋",
+        "雅典娜",
+        "林小满",
+        "影子"
+      ],
+      "related_locations": [],
+      "clues": [],
+      "importance": 7.0
+    }
+  ],
+  "plot_outline": []
+}

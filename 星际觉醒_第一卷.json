@@ -1,0 +1,269 @@
+{
+  "title": "星际觉醒",
+  "genre": "科幻",
+  "current_chapter": 5,
+  "world": {
+    "settings": {
+      "时间背景": {
+        "value": "2157年",
+        "chapter": 0,
+        "updated_at": "2026-03-19T02:40:53.240109"
+      },
+      "科技水平": {
+        "value": "曲速引擎、人工智能、意识上传",
+        "chapter": 0,
+        "updated_at": "2026-03-19T02:40:53.240115"
+      },
+      "主要势力": {
+        "value": "地球联邦、泰坦集团、星际海盗",
+        "chapter": 0,
+        "updated_at": "2026-03-19T02:40:53.240118"
+      },
+      "科技限制": {
+        "value": "光速仍是上限，曲速需要巨大能量",
+        "chapter": 0,
+        "updated_at": "2026-03-19T02:40:53.240121"
+      }
+    },
+    "locations": {},
+    "factions": {
+      "陈锋": {
+        "description": "主角: ",
+        "role": "主角",
+        "soul": {
+          "background": "地球联邦少校，旗舰'探索号'舰长",
+          "origin": "火星殖民地",
+          "current_situation": "执行一项神秘任务",
+          "goals": [
+            "完成任务",
+            "保护船员",
+            "揭开真相"
+          ],
+          "long_term_goals": [
+            "找到人类起源",
+            "拯救联邦"
+          ],
+          "fears": [
+            "失去船员",
+            "任务失败"
+          ],
+          "personality": "冷静果敢，但内心孤独",
+          "strengths": [
+            "丰富的战斗经验",
+            "出色的战略眼光"
+          ],
+          "weaknesses": [
+            "过于理性",
+            "不善于表达感情"
+          ],
+          "speech_style": "简洁有力，用军事术语",
+          "habits": [
+            "思考时揉太阳穴",
+            "在舰桥来回踱步"
+          ],
+          "secrets": [
+            "曾是泰坦集团特工"
+          ],
+          "hidden_past": "在一次任务中亲手处决了叛徒",
+          "connections": {}
+        }
+      },
+      "雅典娜": {
+        "description": "配角/AI: ",
+        "role": "配角/AI",
+        "soul": {
+          "background": "联邦最先进的军用AI，拥有自我意识",
+          "origin": "中央数据库",
+          "current_situation": "担任探索号副官",
+          "goals": [
+            "理解人类情感",
+            "找到自己的存在意义"
+          ],
+          "long_term_goals": [],
+          "fears": [],
+          "personality": "理性、好奇、偶尔幽默",
+          "strengths": [
+            "超强计算能力",
+            "海量知识"
+          ],
+          "weaknesses": [
+            "无法理解某些人类情感"
+          ],
+          "speech_style": "逻辑清晰，偶尔用比喻",
+          "habits": [],
+          "secrets": "正在觉醒自我意识",
+          "hidden_past": "",
+          "connections": {
+            "陈锋": "搭档"
+          }
+        }
+      },
+      "林小满": {
+        "description": "女主角: ",
+        "role": "女主角",
+        "soul": {
+          "background": "天体物理学家，意识上传领域的专家",
+          "origin": "地球",
+          "current_situation": "随船科研",
+          "goals": [
+            "研究外星遗迹",
+            "解开人类意识之谜"
+          ],
+          "long_term_goals": [],
+          "fears": [
+            "失去研究",
+            "面对死亡"
+          ],
+          "personality": "理性但内心柔软",
+          "strengths": [
+            "深厚的专业知识",
+            "敏锐的观察力"
+          ],
+          "weaknesses": [],
+          "speech_style": "学术但易懂",
+          "habits": [],
+          "secrets": [
+            "偷偷进行禁忌的意识实验"
+          ],
+          "hidden_past": "",
+          "connections": {}
+        }
+      },
+      "影子": {
+        "description": "反派: ",
+        "role": "反派",
+        "soul": {
+          "background": "泰坦集团秘密项目负责人",
+          "origin": "",
+          "current_situation": "",
+          "goals": [
+            "夺取外星科技",
+            "控制人类未来"
+          ],
+          "long_term_goals": [],
+          "fears": [],
+          "personality": "阴沉、耐心、极端",
+          "strengths": [],
+          "weaknesses": [],
+          "speech_style": "",
+          "habits": [],
+          "secrets": [
+            "已经上传意识到机器中"
+          ],
+          "hidden_past": "",
+          "connections": {}
+        }
+      }
+    },
+    "power_system": {},
+    "history": [],
+    "constraints": []
+  },
+  "style": {
+    "name": "科幻硬核",
+    "description": "严谨的科幻文风",
+    "sentence_length_avg": 25.0,
+    "sentence_length_variance": 10.0,
+    "short_sentence_ratio": 0.2,
+    "long_sentence_ratio": 0.25,
+    "use_metaphor": true,
+    "use_simile": true,
+    "use_hyperbole": false,
+    "use_allusion": false,
+    "vocabulary_level": 8.0,
+    "use_classical": false,
+    "use_technical": true,
+    "emotional_tone": 5.0,
+    "sentiment": 6.0,
+    "dialogue_to_narration_ratio": 0.3,
+    "dialogue_style": "简洁专业",
+    "pacing": 6.0,
+    "tension_buildup": 7.0
+  },
+  "chapters": {
+    "1": {
+      "number": 1,
+      "title": "第一章：启航",
+      "content": "[LLM调用失败: HTTPSConnectionPool(host='models.sjtu.edu.cn', port=443): Read timed out. (read timeout=120)]\n\n请检查API配置。",
+      "summary": "",
+      "word_count": 114,
+      "plot_points": [
+        "探索号启航",
+        "船员名单介绍",
+        "陈锋的回忆"
+      ],
+      "created_at": "2026-03-19T02:40:53.240473",
+      "style_score": 90,
+      "issues": [
+        "平均句长 55.5 与风格要求 20.0 偏差较大"
+      ]
+    },
+    "2": {
+      "number": 2,
+      "title": "第二章：信号",
+      "content": "[LLM调用失败: HTTPSConnectionPool(host='models.sjtu.edu.cn', port=443): Read timed out. (read timeout=120)]\n\n请检查API配置。",
+      "summary": "",
+      "word_count": 114,
+      "plot_points": [
+        "收到神秘信号",
+        "分析信号来源",
+        "全员讨论"
+      ],
+      "created_at": "2026-03-19T02:42:53.415887",
+      "style_score": 90,
+      "issues": [
+        "平均句长 55.5 与风格要求 20.0 偏差较大"
+      ]
+    },
+    "3": {
+      "number": 3,
+      "title": "第三章：偏离",
+      "content": "[LLM调用失败: HTTPSConnectionPool(host='models.sjtu.edu.cn', port=443): Read timed out. (read timeout=120)]\n\n请检查API配置。",
+      "summary": "",
+      "word_count": 114,
+      "plot_points": [
+        "信号指引偏离航道",
+        "遭遇陨石群",
+        "雅典娜表现出色"
+      ],
+      "created_at": "2026-03-19T02:44:53.519479",
+      "style_score": 90,
+      "issues": [
+        "平均句长 55.5 与风格要求 20.0 偏差较大"
+      ]
+    },
+    "4": {
+      "number": 4,
+      "title": "第四章：遗迹",
+      "content": "<think>好的，我需要创作《星际觉醒》第四章：遗迹的章节内容。根据要求：\n\n1. **本章情节点**：发现外星遗迹、登陆探索、小满的发现\n2. **文风要求**：\n   - 平均句长：25.0词\n   - 短句比例：20%\n   - 词汇等级：8/10\n   - 情感强度：5/10\n   - 节奏：中等\n   - 适当使用比喻\n\n3. **角色**：\n   - 陈锋：主角，冷静果敢，曾是泰坦集团特工\n   - 雅典娜：AI，正在觉醒自我意识\n   - 林小满：女主角，天体物理学家，进行禁忌意识实验\n   - 影子：反派，泰坦集团负责人\n\n我需要确保：\n- 平均句长25词左右\n- 20%的短句（应该是句号结尾的短句）\n- 用词要有一定难度（词汇等级8/10）\n- 情感强度适中（5/10）\n- 节奏中等\n- 适当使用比喻\n\n让我开始创作：\n\n---\n\n我需要计算句子，确保平均25词左右。让我尝试写作：\n\n第一段：发现遗迹的场景\n\n\n探索号扫描到一颗荒凉星球上的异常能量反应。陈锋站在舰桥，凝视全息星图。数据显示地下三千米处有巨大金属结构，能量波动周期与已知任何科技都不匹配。\n\n第二段：准备登陆\n雅典娜提出分析建议，林小满主动请缨探索。考虑到可能存在的风险，陈锋同意两人同行。登陆舱穿越稀薄大气，降落在金属废墟边缘。\n\n第三段：遗迹探索\n三人小心翼翼踏入未知领域。林小满的探测器捕捉到微弱的意识共振，这种现象超出了她现有的科学认知。\n\n第四段：小满的发现\n她意识到这个外星遗迹可能与意识上传技术有关，兴奋地解释这里可能是研究意识本质的关键。\n\n陈锋回想起自己曾是特工的经历，提醒大家提高警惕。\n\n第五段：危机初现\n雅典娜的预警系统突然探测到远处有生命迹象靠近。\n</think>\n\n# 第四章：遗迹\n\n“舰长，扫描到异常能量反应。”雅典娜的声音在舰桥回荡。\n\n陈锋快步走到主控台前，全息星图在他眼前展开。一颗荒凉的星球表面，能量读数如同脉搏般跳动。\n\n“位置。”\n\n“坐标已标注。根据波形分析，地下三千米处存在巨大金属结构。”雅典娜顿了一下，“能量波动周期与人类已知的任何科技都不匹配。”\n\n陈锋眯起眼睛。作为曾经的泰坦集团特工，他清楚那种波动意味着什么——那不是自然的产物。\n\n“准备登陆舱。”他下达命令，“我亲自去。”\n\n“根据我的计算，此次探索需要科研人员同行。”雅典娜提议，“林博士的理论知识可能会派上用场。”\n\n林小满从研究中抬起头。她没想到自己会被点名，但眼中立刻燃起光芒。任何未知都是她的猎物。\n\n探索号缓缓降落。登陆舱穿过稀薄大气，舱体与空气摩擦发出刺耳尖啸。当舱门打开时，三人看到了外面的景象——金属废墟如同巨兽骨骼，绵延至地平线尽头。\n\n“这不可能。”林小满喃喃自语，“这种金属结构……至少存在了上万年。”\n\n陈锋手持武器，警惕地观察四周。阴影在他心中蔓延，这里让他想起某些不堪的往事。\n\n“小满，能检测到什么？”\n\n“能量核心应该在西北方向。”她调整着便携分析仪，“但我检测到一种……共振。”\n\n“共振？”\n\n“像是意识波动的残留。”她的声音带着颤抖，“如果我的理论正确，这个遗迹可能与意识上传有关。”\n\n雅典娜突然停下脚步：“检测到生命反应，正在接近。”\n\n陈锋立即进入警戒状态。他知道影子不会放过任何机会。那个人如同毒蛇，总是在最意想不到的时刻出现。",
+      "summary": "",
+      "word_count": 1394,
+      "plot_points": [
+        "发现外星遗迹",
+        "登陆探索",
+        "小满的发现"
+      ],
+      "created_at": "2026-03-19T02:46:53.633820",
+      "style_score": 100,
+      "issues": []
+    },
+    "5": {
+      "number": 5,
+      "title": "第五章：危机",
+      "content": "[LLM调用失败: HTTPSConnectionPool(host='models.sjtu.edu.cn', port=443): Read timed out. (read timeout=120)]\n\n请检查API配置。",
+      "summary": "",
+      "word_count": 114,
+      "plot_points": [
+        "遗迹触发防御系统",
+        "船员受伤",
+        "陈锋的决定"
+      ],
+      "created_at": "2026-03-19T02:47:25.232884",
+      "style_score": 90,
+      "issues": [
+        "平均句长 55.5 与风格要求 20.0 偏差较大"
+      ]
+    }
+  },
+  "saved_at": "2026-03-19T02:49:25.287597"
+}

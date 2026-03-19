@@ -1,0 +1,59 @@
+{
+  "threads": [
+    {
+      "id": "171e6480-c2e0-42ed-b47b-b71d455b5960",
+      "title": "林风的血脉封印",
+      "content": "林风的血脉封印",
+      "plot_type": "foreshadow",
+      "status": "active",
+      "created_chapter": 1,
+      "target_reveal_chapter": null,
+      "revealed_chapter": null,
+      "related_characters": [
+        "林风",
+        "苏晴",
+        "黑曜"
+      ],
+      "related_locations": [],
+      "clues": [],
+      "importance": 7.0
+    },
+    {
+      "id": "fe0486ac-9aa4-4060-9eb6-1e4a039bcc74",
+      "title": "黑曜的阴谋",
+      "content": "黑曜的阴谋",
+      "plot_type": "foreshadow",
+      "status": "active",
+      "created_chapter": 2,
+      "target_reveal_chapter": null,
+      "revealed_chapter": null,
+      "related_characters": [
+        "林风",
+        "苏晴",
+        "黑曜"
+      ],
+      "related_locations": [],
+      "clues": [],
+      "importance": 7.0
+    },
+    {
+      "id": "06fd833f-7d54-4833-ba7c-de0d567c73c9",
+      "title": "苏晴的秘密",
+      "content": "苏晴的秘密",
+      "plot_type": "foreshadow",
+      "status": "active",
+      "created_chapter": 3,
+      "target_reveal_chapter": null,
+      "revealed_chapter": null,
+      "related_characters": [
+        "林风",
+        "苏晴",
+        "黑曜"
+      ],
+      "related_locations": [],
+      "clues": [],
+      "importance": 7.0
+    }
+  ],
+  "plot_outline": []
+}
