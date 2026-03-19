@@ -1,21 +1,21 @@
 """
-LLM client wrapper for OpenAI-compatible APIs.
+LLM client wrapper - 使用 requests 直接调用
 """
 import json
+import os
+import time
 from typing import Dict, Any, Optional
-from openai import OpenAI
+import requests
 from .config import Config
 from .utils.logger import log
 
 
 class LLMClient:
-    """Wrapper for LLM API calls"""
+    """LLM API 调用"""
     
     def __init__(self):
-        self.client = OpenAI(
-            api_key=Config.LLM_API_KEY,
-            base_url=Config.LLM_BASE_URL
-        )
+        self.api_key = Config.LLM_API_KEY
+        self.base_url = Config.LLM_BASE_URL
         self.model = Config.LLM_MODEL
         self.temperature = Config.LLM_TEMPERATURE
         self.max_tokens = Config.LLM_MAX_TOKENS
@@ -24,47 +24,44 @@ class LLMClient:
         self,
         prompt: str,
         system_prompt: Optional[str] = None,
-        response_format: Optional[Dict[str, Any]] = None,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None
     ) -> str:
-        """
-        Call LLM API with given prompt.
+        """调用 LLM API"""
+        url = f"{self.base_url}/chat/completions"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
+        }
         
-        Args:
-            prompt: User prompt
-            system_prompt: System prompt (optional)
-            response_format: JSON schema for structured output (optional)
-            temperature: Override default temperature
-            max_tokens: Override default max_tokens
-            
-        Returns:
-            Response text or JSON string
-        """
         messages = []
         if system_prompt:
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
         
-        kwargs = {
+        data = {
             "model": self.model,
             "messages": messages,
             "temperature": temperature or self.temperature,
             "max_tokens": max_tokens or self.max_tokens
         }
         
-        if response_format:
-            kwargs["response_format"] = response_format
-        
-        try:
-            log.info(f"Calling LLM API: model={self.model}")
-            response = self.client.chat.completions.create(**kwargs)
-            result = response.choices[0].message.content
-            log.info(f"LLM API call successful, response length: {len(result)}")
-            return result
-        except Exception as e:
-            log.error(f"LLM API call failed: {e}")
-            raise
+        # 重试3次
+        for attempt in range(3):
+            try:
+                log.info(f"Calling LLM API: model={self.model}, attempt {attempt+1}")
+                r = requests.post(url, headers=headers, json=data, timeout=60)
+                r.raise_for_status()
+                result = r.json()
+                content = result["choices"][0]["message"]["content"]
+                log.info(f"LLM API call successful, response length: {len(content)}")
+                return content
+            except Exception as e:
+                log.warning(f"LLM API call failed: {e}, attempt {attempt+1}/3")
+                if attempt < 2:
+                    time.sleep(2)
+                else:
+                    raise
     
     def call_json(
         self,
@@ -72,32 +69,35 @@ class LLMClient:
         system_prompt: Optional[str] = None,
         temperature: Optional[float] = None
     ) -> Dict[str, Any]:
-        """
-        Call LLM API and parse JSON response.
+        """调用 LLM API 并解析 JSON"""
+        url = f"{self.base_url}/chat/completions"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
+        }
         
-        Args:
-            prompt: User prompt
-            system_prompt: System prompt (optional)
-            temperature: Override default temperature
-            
-        Returns:
-            Parsed JSON object
-        """
-        response_format = {"type": "json_object"}
-        result = self.call(
-            prompt=prompt,
-            system_prompt=system_prompt,
-            response_format=response_format,
-            temperature=temperature
-        )
+        messages = []
+        if system_prompt:
+            messages.append({"role": "system", "content": system_prompt})
+        messages.append({"role": "user", "content": prompt})
+        
+        data = {
+            "model": self.model,
+            "messages": messages,
+            "temperature": temperature or self.temperature,
+            "max_tokens": self.max_tokens,
+            "response_format": {"type": "json_object"}
+        }
         
         try:
-            return json.loads(result)
-        except json.JSONDecodeError as e:
-            log.error(f"Failed to parse JSON response: {e}")
-            log.error(f"Response content: {result}")
+            r = requests.post(url, headers=headers, json=data, timeout=60)
+            r.raise_for_status()
+            result = r.json()
+            return json.loads(result["choices"][0]["message"]["content"])
+        except Exception as e:
+            log.error(f"LLM JSON call failed: {e}")
             raise
 
 
-# Global instance
+# 全局实例
 llm_client = LLMClient()
