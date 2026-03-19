@@ -27,7 +27,7 @@ cd NovelMind
 
 ```python
 LLM_API_KEY = "sk-你的KEY"  # 换成你的key
-LLM_BASE_URL = "https://models.sjtu.edu.cn/api/v1"  # 或其他兼容API
+LLM_BASE_URL = "https://api.openai.com/v1"  # 或其他兼容API
 ```
 
 ### 3. 启动 Web 界面
