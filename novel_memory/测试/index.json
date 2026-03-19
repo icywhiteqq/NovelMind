@@ -1,6 +1,6 @@
 {
   "project": "测试",
-  "updated_at": "2026-03-19T02:49:04.799603",
+  "updated_at": "2026-03-19T03:25:27.891933",
   "memories": [
     {
       "id": "96c0163a-b98a-46b3-bf01-650fe623f2bc",
@@ -8,7 +8,20 @@
       "content": "第1章: 第一章 - 待补充",
       "chapter": 1,
       "importance": 5.0,
-      "created_at": "2026-03-19T02:49:04.799582",
+      "created_at": "2026-03-19T03:23:56.802093",
+      "tags": [
+        "章节",
+        "1"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "b4659ed9-0002-4bb9-85d3-3cfce6891e5f",
+      "type": "plot",
+      "content": "第1章: 第一章 - 待补充",
+      "chapter": 1,
+      "importance": 5.0,
+      "created_at": "2026-03-19T03:25:27.891913",
       "tags": [
         "章节",
         "1"
