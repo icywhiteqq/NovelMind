@@ -1,0 +1,32 @@
+{
+  "project": "都市神医",
+  "updated_at": "2026-03-19T06:23:02.806631",
+  "memories": [
+    {
+      "id": "a64f536a-6734-48a8-ab5b-85f084961902",
+      "type": "plot",
+      "content": "第1章: 第一章：下山 - 待补充",
+      "chapter": 1,
+      "importance": 5.0,
+      "created_at": "2026-03-19T06:23:02.806171",
+      "tags": [
+        "章节",
+        "1"
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "16ffb5bd-7332-4ee6-b1fd-e75c769f64e8",
+      "type": "plot",
+      "content": "第1章: 第一章：下山 - 待补充",
+      "chapter": 1,
+      "importance": 5.0,
+      "created_at": "2026-03-19T06:23:02.806622",
+      "tags": [
+        "章节",
+        "1"
+      ],
+      "metadata": {}
+    }
+  ]
+}

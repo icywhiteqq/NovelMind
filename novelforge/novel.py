@@ -305,21 +305,20 @@ class Novel:
             plot_points=plot_points or []
         )
         
-        # 检查是否有LLM配置
+        # 强制使用 LLM 生成（如果配置了）
         import os
-        has_llm = bool(os.environ.get("OPENAI_API_KEY"))
+        from .config import Config
         
-        if (use_llm or has_llm) and self.llm_client is not None:
-            # 调用 LLM 生成
-            chapter.content = self._generate_with_llm(chapter)
+        has_api_key = bool(Config.LLM_API_KEY and Config.LLM_API_KEY != "sk-YOUR-KEY-HERE")
+        
+        if use_llm or has_api_key:
+            try:
+                chapter.content = self._generate_with_llm(chapter)
+            except Exception as e:
+                chapter.content = self._generate_demo(chapter)
         elif content:
-            # 使用传入的内容
             chapter.content = content
-        elif has_llm:
-            # 有API Key但没有设置client，直接调用LLM
-            chapter.content = self._generate_with_llm(chapter)
         else:
-            # 模拟生成（实际需要接入 LLM）
             chapter.content = self._generate_demo(chapter)
         
         # 统计字数
@@ -345,23 +344,42 @@ class Novel:
         """调用 LLM 生成内容"""
         # 构建提示词
         context = self._build_context(chapter)
-        prompt = f"""
-小说标题：{self.title}
-章节：{chapter.title}
+        # 详细展开每个情节点
+        plot_detail = ""
+        for i, point in enumerate(chapter.plot_points, 1):
+            plot_detail += f"{i}. {point}\n"
+        
+        characters_desc = ""
+        for name, char in self.characters.items():
+            soul = char.soul
+            goals = ', '.join(soul.goals) if soul.goals else '无'
+            secrets = ', '.join(soul.secrets) if soul.secrets else '无'
+            characters_desc += f"- {char.name}（{char.role}）：{soul.personality}，目标：{goals}，秘密：{secrets}\n"
+        
+        prompt = f"""你是一个专业的小说作家。请根据以下提纲创作一章精彩的小说。
 
-世界设定：
+【小说标题】{self.title}
+【小说类型】{self.genre}
+【本章标题】{chapter.title}
+
+【世界观设定】
 {json.dumps(self.world.to_dict(), ensure_ascii=False, indent=2)}
 
-角色：
-{chr(10).join([str(c.soul) for c in self.characters.values()])}
+【角色介绍】
+{characters_desc}
 
-本章情节点：{', '.join(chapter.plot_points)}
+【本章剧情提纲】
+{plot_detail}
 
-文风要求：
-{self.style.generate_prompt()}
+【写作要求】
+1. 每个情节点要展开成500-1000字的详细描写
+2. 对话要符合角色性格
+3. 要有场景描写和心理描写
+4. 情节要连贯，有代入感
+5. 字数要求：至少1500字
+6. 必须输出完整的小说正文，不能只是大纲
 
-请按照以上要求创作本章内容。
-"""
+请开始创作正文："""
         # 调用 LLM
         return self._call_llm(prompt)
     
